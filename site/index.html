@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан "LERO"</title>
+  <!-- Підключаємо Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Підключаємо власний CSS -->
+  <link href="../site/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<!-- Навігаційне меню -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LERO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Меню</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!-- Головний блок -->
+<header class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Ласкаво просимо до ресторану "LERO"</h1>
+      <p class="lead">Найкраще місце для смачних страв та приємної атмосфери</p>
+      <a class="btn btn-primary btn-lg" href="#reservation" role="button">Забронювати стіл</a>
+    </div>
+  </header>  
+
+<!-- Розділ "Про нас" -->
+<section id="about" class="container">
+    <h2>Про нас</h2>
+    <p>Ласкаво просимо до ресторану "LERO"! Ми - команда професіоналів, яка працює для того, щоб зробити ваше перебування у нашому закладі найприємнішим та смачним.</p>
+    <p>Наш ресторан - це місце, де ви можете насолодитися найсмачнішими стравами, які приготовлені з найкращих продуктів. Ми пишаємося своєю традиційною кухнею, яка завжди привертає смаки наших гостей.</p>
+    <p>Наша команда - це люди, які з любов'ю та пильним ставленням до деталей створюють атмосферу гостинності та затишку. Ми завжди раді бачити вас у нашому ресторані і готові зробити все можливе, щоб ваше перебування тут було незабутнім.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../site//images/1.jpg" alt="Фото 1" class="photo">
+      </div>
+      <div class="col-md-4">
+        <img src="../site//images/2.jpg" alt="Фото 2" class="photo">
+      </div>
+      <div class="col-md-4">
+        <img src="../site//images/3.jpg" alt="Фото 3" class="photo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../site//images/4.jpg" alt="Фото 4" class="photo">
+      </div>
+      <div class="col-md-6">
+        <img src="../site//images/5.jpg" alt="Фото 5" class="photo">
+      </div>
+    </div>
+  </section>
+
+<!-- Розділ "Меню" -->
+<section id="menu" class="container-fluid">
+    <h2>Меню</h2>
+  
+    <!-- Перші страви -->
+    <div class="menu-category">
+      <h3>Перші страви</h3>
+      <ul class="menu-items">
+        <li>
+          <img src="../site/images/6.jpg" alt="Борщ">
+          <h4>Борщ</h4>
+          <p>Класичний український борщ зі свіжими овочами та качаними буряками.</p>
+          <span class="price">50 грн</span>
+        </li>
+        <li>
+            <img src="../site/images/7.jpg" alt="Грибний суп">
+            <h4>Грибний суп</h4>
+            <p>Ароматний суп з домашніми грибами та свіжими овочами.</p>
+            <span class="price">45 грн</span>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Головні страви -->
+    <div class="menu-category">
+      <h3>Головні страви</h3>
+      <ul class="menu-items">
+        <li>
+          <img src="../site/images/8.jpg" alt="Стейк з яловичини">
+          <h4>Стейк з яловичини</h4>
+          <p>Ніжний стейк з підібраних кусків яловичини, приготований до вашого смаку.</p>
+          <span class="price">150 грн</span>
+        </li>
+        <li>
+          <img src="../site/images/9.jpg" alt="Паста з морепродуктами">
+          <h4>Паста з морепродуктами</h4>
+          <p>Ласощі з великим вибором морепродуктів, приготовані зі свіжою пастою.</p>
+          <span class="price">120 грн</span>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Десерти -->
+    <div class="menu-category">
+      <h3>Десерти</h3>
+      <ul class="menu-items">
+        <li>
+          <img src="../site/images/10.jpg" alt="Тірамісу">
+          <h4>Тірамісу</h4>
+          <p>Класичний італійський десерт з м'яким сиром Маскарпоне та кавою.</p>
+          <span class="price">60 грн</span>
+        </li>
+        <li>
+          <img src="../site/images/11.jpg" alt="Пиріг Чізкейк">
+          <h4>Пиріг Чізкейк</h4>
+          <p>Ніжне і вершкове лакомство зі смаком ванілі та сиром.</p>
+          <span class="price">70 грн</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  
+
+<!-- Розділ "Контакти" -->
+<section id="contact" class="container">
+    <h2 class="section-title">Контакти</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-info">
+                <h3>Адреса</h3>
+                <p>Вул. Приморська, 10</p>
+                <p>Київ, Україна, 01001</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contact-info">
+                <h3>Контактна інформація</h3>
+                <p>Телефон: +1234567890</p>
+                <p>Email: info@lerorestaurant.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contact-info">
+                <h3>Години роботи</h3>
+                <p>Понеділок - П'ятниця: 10:00 - 22:00</p>
+                <p>Субота - Неділя: 11:00 - 23:00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light text-center">
+    <div class="container">
+      <span class="text-muted">© 2024 Ресторан "LERO"</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<script>
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var jumbotron = document.querySelector('.jumbotron');
+  if (scrollPosition > 50) {
+    jumbotron.classList.add('blur');
+  } else {
+    jumbotron.classList.remove('blur');
+  }
+});
+  </script>
+</html>

@@ -1,0 +1,180 @@
+/* Головний стиль */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Навігаційне меню */
+  .navbar {
+    background-color: #f8f9fa !important; /* Колір фону */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #343a40; /* Колір тексту */
+  }
+  
+  /* Головний блок */
+  .jumbotron {
+    background-image: url('background.jpg'); /* Зображення фону */
+    background-size: cover;
+    color: #ffffff; /* Колір тексту */
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  /* Розділи */
+  section {
+    margin-bottom: 50px;
+  }
+  
+  /* Підвал */
+  .footer {
+    padding: 20px 0;
+  }
+
+/* Власні стилі */
+.photo {
+    max-width: 100%; /* Забезпечуємо, що зображення не виходить за межі своїх контейнерів */
+    height: auto; /* Автоматично встановлюємо висоту для збереження пропорцій */
+  }
+    
+
+  .jumbotron {
+  position: relative;
+  overflow: hidden; /* Забороняє зображенням виходити за межі блоку */
+  background-image: url('../images/4.jpg'); /* Зображення на фоні */
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.5s ease; /* Плавна анімація зміни розмиття */
+}
+
+.blur {
+  filter: blur(10px); /* Застосування розмиття */
+}
+
+.jumbotron .container {
+  position: relative; /* Забезпечує позицію для внутрішнього контейнера */
+  z-index: 1; /* Забезпечує високий рівень змісту */
+}
+
+/* Menu */
+/* Додамо стилі для картинок у меню */
+.menu-items img {
+    width: 200px; /* Фіксована ширина */
+    height: 150px; /* Фіксована висота */
+    object-fit: cover; /* Заповнення контейнера, не спотворюючи зображення */
+    border-radius: 8px; /* Закруглені кути */
+  }
+  
+  /* Додамо стилі для розділу меню та категорій */
+  #menu {
+    padding: 50px 0; /* Відступи зверху і знизу */
+  }
+  
+  .menu-category {
+    margin-bottom: 40px; /* Відступи між категоріями */
+  }
+  
+  .menu-category h3 {
+    font-size: 24px; /* Розмір шрифту заголовка категорії */
+    color: #333; /* Колір тексту */
+    margin-bottom: 20px; /* Відступи знизу заголовка категорії */
+  }
+  
+  .menu-items {
+    list-style: none; /* Видалення маркерів списку */
+    padding: 0; /* Відсутність внутрішніх відступів */
+    display: grid; /* Відображення у вигляді сітки */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Адаптивна сітка */
+    gap: 20px; /* Відступи між елементами сітки */
+  }
+  
+  .menu-items li {
+    background-color: #f9f9f9; /* Фоновий колір елементу */
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 8px; /* Закруглені кути */
+  }
+  
+  .menu-items h4 {
+    font-size: 18px; /* Розмір шрифту назви страви */
+    margin-bottom: 10px; /* Відступи знизу назви страви */
+  }
+  
+  .menu-items p {
+    font-size: 16px; /* Розмір шрифту опису страви */
+    color: #666; /* Колір тексту */
+    margin-bottom: 10px; /* Відступи знизу опису страви */
+  }
+  
+  .menu-items .price {
+    font-weight: bold; /* Жирний шрифт для ціни */
+  }
+
+/* Додамо стилі для розділу меню */
+#menu {
+    padding: 50px 0; /* Відступи зверху і знизу */
+    text-align: center; /* Центрування тексту всередині розділу */
+  }
+  
+  .menu-category {
+    margin-bottom: 40px; /* Відступи між категоріями */
+    display: inline-block; /* Розділ меню відображається як блок */
+    text-align: left; /* Вирівнювання тексту всередині розділу зліва */
+  }
+
+/* Стилі для розділу "Про нас" */
+#about {
+    text-align: center; /* Центрування тексту всередині розділу */
+    padding: 50px 0; /* Відступи зверху і знизу */
+  }
+  
+  .section-title {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    color: #333; /* Колір тексту */
+    margin-bottom: 30px; /* Відступи знизу заголовка */
+  }
+  
+  .about-content {
+    max-width: 600px; /* Максимальна ширина контенту */
+    margin: 0 auto; /* Центрування блоку контенту */
+  }
+  
+  .about-content p {
+    font-size: 18px; /* Розмір шрифту тексту */
+    line-height: 1.6; /* Міжрядковий інтервал */
+    color: #666; /* Колір тексту */
+    margin-bottom: 20px; /* Відступи знизу тексту */
+  }
+
+  /* Стилі для розділу "Контакти" */
+#contact {
+    text-align: center; /* Центрування тексту всередині розділу */
+    padding: 50px 0; /* Відступи зверху і знизу */
+  }
+  
+  .section-title {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    color: #333; /* Колір тексту */
+    margin-bottom: 30px; /* Відступи знизу заголовка */
+  }
+  
+  .contact-info {
+    text-align: left; /* Вирівнювання тексту всередині блоку вліво */
+    margin-bottom: 30px; /* Відступи знизу блоку контактної інформації */
+  }
+  
+  .contact-info h3 {
+    font-size: 24px; /* Розмір шрифту заголовка блоку контактної інформації */
+    color: #333; /* Колір тексту заголовка */
+    margin-bottom: 15px; /* Відступи знизу заголовка */
+  }
+  
+  .contact-info p {
+    font-size: 18px; /* Розмір шрифту тексту контактної інформації */
+    color: #666; /* Колір тексту */
+    margin-bottom: 8px; /* Відступи знизу тексту */
+  }
+  
